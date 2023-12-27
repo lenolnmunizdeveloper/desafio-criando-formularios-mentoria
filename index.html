@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Mentoria</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+	<header>
+		<h1>Mentoria</h1>
+		<p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+	</header>
+	
+	<form>
+		<h2>Informações pessoais</h2>
+		<div class="line"></div>
+		<label for="name">Nome</label>
+		<input type="text" name="name"/>
+		<label for="last-name">Sobrenome</label>
+		<input type="text" name="last-name"/>
+		<label for="email">Email<span>(digite um email válido)</span></label>
+		<input type="email" name="email"/>
+		<label for="password">Senha<span>(mínimo de 6 caracteres)</span></label>
+		<input type="password" name="password"/>
+
+		<h2>Informações do mentor</h2>
+		<div class="line"></div>
+		<label for="master-name">Nome do seu mentor<span>(só o primeiro nome)</span></label>
+		<input type="text" name="master-name"/>
+
+		<h2>Seus horários disponíveis</h2>
+		<p>Primeira Mentoria</p>
+		<div class="line"></div>
+		<label for="date">Data<span>(DD/MM/AAAA)</span></label>
+		<input type="date" name="date"/>
+		<label for="first-init-time">Das</label>
+		<input type="time" name="hour"/>
+		<label for="first-final-time">Até</label>
+		<input type="time" name="first-final-time"/>
+
+		<p>Segunda Mentoria</p>
+		<div class="line"></div>
+		<label for="date">Data<span>(DD/MM/AAAA)</span></label>
+		<input type="date" name="date"/>
+		<label for="sec-init-time">Das</label>
+		<input type="time" name="sec-init-time"/>
+		<label for="sec-final-time">Até</label>
+		<input type="time" name="sec-final-time"/>
+	</form>
+	</div>
+</body>
+</html>
