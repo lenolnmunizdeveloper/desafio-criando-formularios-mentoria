@@ -1,3 +1,7 @@
+:root {
+	--primary-color: #535971;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -13,95 +17,153 @@ body::before {
 	content: '';
 	
 	width: 100%;
-	height: 436px;
+	height: 27.25rem; /* 436px */
 
 	position: absolute;
 	z-index: -1;
 
-	background: #535971;
+	background: var(--primary-color);
 }
 
-header {
-	width: 417px;
-}
-
-header h1 {
-	font-family: 'Staatliches', sans-serif;
-	font-weight: 400;
-	font-size: 48px;
-	padding-top: 140px;
-	color: #FFFFFF;
-}
-
-header p {
-	font-size: 20px;
-	padding-top: 18px;
-	line-height: normal;
-	height: 46px;
-	color: #FFFFFF;
-}
-
-.wrapper {
-	width: 750px;
-	min-height: 1084px;
+.page {
+	width: 46.875rem; /* 750px */
+	min-height: 67.75rem; /* 1084px */
 	margin: 0 auto;
 
 }
 
+header {
+	width: 26.0625rem; /* 417px */
+}
+
+header h1, form p, fieldset legend {
+	font-family: 'Staatliches', sans-serif;
+	font-weight: 400;
+}
+
+header h1 {
+	font-size: 3rem; /* 48px */
+	padding-top: 8.75rem; /* 140px */
+	color: #FFFFFF;
+}
+
+header p {
+	font-size: 1.25rem; /* 20px */
+	padding-top: 1.125rem; /* 18px */
+	height: 2.875rem; /* 46px */
+	color: #FFFFFF;
+}
+
 form {
 	background-color: #FFFFFF;
-	margin-top:58px;
-	padding: 64px 64px;
-	border-radius: 20px 20px 0px 0px;
+	margin-top: 3.625rem; /* 58px */
+	padding: 4rem; /* 64px */
+	border-radius: 1.25rem 1.25rem 0 0; /* 20px 20px 0 0 */
 }
 
-form p {
-	font-family: 'Staatliches', sans-serif;
-	font-weight: 400;
-	color: #535971;
+form p, fieldset {
+	color: var(--primary-color);
 }
 
-h2 {
-	font-family: 'Staatliches', sans-serif;
-	font-weight: 400;
-	font-size: 24px;
-	color: #535971;
-	padding-bottom: 16px;
-	line-height: 34px;
+fieldset {
+	border: none;
 }
 
-.line {
-	border: 1px solid #E6E6F0;
-	width: 622px;
-	margin-bottom: 36px;
+fieldset legend {
+	font-size: 1.5rem; /* 24px */
+	
+	border-bottom: 1px solid #E6E6F0;
+	
+	line-height: 2.125rem; /* 34px */
+	width: 100%;
+	padding-bottom: 0.5rem; /* 8px */
 }
 
-span {
-	color: #C1BCCC;
-	font-size: 12px;
-	line-height: 20px;
+.info  legend {
+	padding-bottom: 1rem; /* 16px */
 }
 
-.name, .master-info, .schedule {
+.personal-info {
+	display: flex;
+	gap: 1.375rem; /* 22px */
+	margin-top: 2.25rem; /* 36px */
+}
+
+.personal-info input, .date-input {
+	width: 18.75rem; /* 300px */
+}
+
+.input-wrapper {
 	display: flex;
 	flex-direction: column;
 }
 
+.account .input-wrapper {
+	margin-top: 1rem; /* 16px */
+}
+
+label {
+	color: #4E4958;
+	font-size: 0.875rem; /* 14px */
+	line-height: 1.5rem; /* 24px */
+}	
+
+span {
+	color: #C1BCCC;
+	font-size: 0.75rem; /* 12px */
+	line-height: 1.25rem; /* 20px */
+	margin-left: 0.5rem; /* 8px */
+}	
+
 input {
-	height: 56px;
-	border-radius: 8px;
+	height: 3.5rem; /* 56px */
+	border-radius: 0.5rem; /* 8px */
 	border: 1px solid var(--Back-Lines-in-white, #E6E6F0);
-	background: var(--Shapes-02, #FAFAFC);
-	margin-top: 8px;
-	padding-left: 20px;
-	font-size: medium;
-}
-
-
-
-.name input {
-	width: 300px;
 	
+	background: var(--Shapes-02, #FAFAFC);
+	
+	margin-top: 0.5rem; /* 8px */
+	padding-left: 1.25rem; /* 20px */
+	font-size: medium;
+	box-sizing: border-box;
+}		
+
+.master {
+	margin-top: 1.875rem; /* 30px */
 }
 
+.sections {
+	margin-top: 2rem; /* 32px */
+}
 
+.schedule {
+	margin-top: 2rem; /* 32px */
+}
+
+.schedule p {
+	color: var(--primary-color);
+	font-family: 'Staatliches',sans-serif;
+	font-size: 1.25rem; /* 20px */
+	line-height: 2.125rem; /* 34px */
+}
+
+.cols-3 {
+	display: flex;
+}
+
+.date-input {
+	margin-right: 2rem;
+}
+
+.time-input {
+	display: flex;
+	gap: 0.625rem;
+}
+
+.time-input input {
+	width: 8.75rem; /* 140px */
+}
+
+.sections > p:last-of-type {
+	margin-top: 1rem;
+}
